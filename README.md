@@ -1,136 +1,106 @@
-# Hi, I'm Silviu Stroe 👋
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-hero-still.svg">
+  <img src="./assets/profile-hero.svg" width="1200" alt="Silviu Stroe — Founder and CTO at Brainic. Building intelligence into useful software. AI, SaaS, and real-time systems.">
+</picture>
 
-**Senior Full-Stack Engineer · Founder & CTO @ Brainic · AI/LLM & Real-Time Systems Builder**
+<p align="center">
+  <a href="https://silviustroe.com"><strong>Website & writing</strong></a> &nbsp; / &nbsp;
+  <a href="https://github.com/BrainicHQ"><strong>Brainic</strong></a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/silviustroe"><strong>LinkedIn</strong></a> &nbsp; / &nbsp;
+  <a href="https://x.com/SilviuStroe"><strong>X</strong></a>
+</p>
 
-I build production-grade SaaS products, AI pipelines, mobile apps, and real-time systems — from architecture and implementation to deployment, monitoring, and iteration.
+# Founder. CTO. Still shipping code.
 
-Currently focused on **Next.js, TypeScript, PostgreSQL, Python, Docker, AI/LLM workflows, multi-tenant SaaS, and real-time communication systems**.
+I'm **Silviu Stroe**, founder and CTO at **[Brainic](https://github.com/BrainicHQ)**, based in **Brașov, Romania**. I build AI products, SaaS platforms, and real-time systems, from the first architecture decision to the production incident that tests it.
 
----
+My work spans product strategy, technical leadership, and hands-on engineering. I'm equally interested in the business problem, the model's failure modes, and what happens when a UDP packet arrives late.
 
-## What I build
+**Product judgment. Systems depth. A persistent curiosity about AI.**
 
-- **AI-enabled SaaS platforms** with multi-tenancy, RBAC, background jobs, approval workflows, and production infrastructure
-- **LLM pipelines** for classification, summarization, multilingual content generation, guardrails, and human-in-the-loop review
-- **Real-time systems** using WebSockets, TCP/UDP, VoIP, audio processing, dashboards, and monitoring tools
-- **Cross-platform apps** for iOS, Android, and web
-- **Developer tools and open-source utilities** used by real people, not just demos
+## Selected work
 
----
+### 01 / Recenzo — AI for customer reputation
 
-## Recent work
+Multi-tenant SaaS for managing Google reviews across business locations. Multilingual LLM replies sit inside a system of **risk classification, content guardrails, and human approval**. RBAC, scheduled sync, background jobs, and retries support the operational side.
 
-### Recenzo — AI Google Review Management SaaS
-Multi-tenant SaaS for managing Google reviews across business locations.
+`Next.js` `TypeScript` `PostgreSQL` `Prisma` `pg-boss` `Docker` `Cloudflare`
 
-**Stack:** Next.js, TypeScript, PostgreSQL, Prisma, Docker, Google OAuth, Google Business Profile API, pg-boss, Cloudflare, Caddy
+### 02 / DeepHAM — intelligence from audio
 
-Highlights:
-- Multi-tenant architecture with RBAC
-- LLM-powered multilingual reply generation
-- Risk classification, content guardrails, and manual approval workflows
-- Scheduled sync, retries, and production deployment with Docker Compose
+Audio transcription, summarization, and search. **Whisper transcribes locally, keeping raw audio off cloud services**; LLM summarization and a searchable dashboard make the output useful. Prompt versioning, caching, deduplication, and idempotent processing keep batch work repeatable.
 
----
+`Python` `Whisper` `Groq` `Dash`
 
-### DeepHAM — AI Audio Analysis Pipeline
-Privacy-first audio processing pipeline for transcription, summarization, and search.
+### 03 / [Latry](https://github.com/s1lviu/Latry) — real-time voice, real networks
 
-**Stack:** Python, local Whisper, Groq, Dash
+A cross-platform VoIP client for the SvxLink amateur radio ecosystem, published on **[iOS](https://apps.apple.com/us/app/latry-a-tiny-svxlink-client/id6751135709)** and **[Android](https://play.google.com/store/apps/details?id=yo6say.latry)**. An Opus audio engine, jitter buffering, and packet-loss handling meet the constraints of mobile networks.
 
-Highlights:
-- Local transcription pipeline with no audio sent to cloud services
-- LLM summarization and searchable dashboard
-- Prompt versioning, caching, deduplication, locking, and idempotent batch processing
+`C++` `Qt / QML` `Opus` `TCP / UDP` `iOS` `Android`
 
----
+## My technical radar · 2026 → 2027
 
-### Latry — Cross-Platform VoIP App for Amateur Radio
-Native mobile VoIP client for the SvxLink amateur radio ecosystem.
+**My thesis:** the next generation of useful AI products will depend on the quality of the systems around the model. These are directions I'm watching and exploring as I look toward 2027.
 
-**Stack:** C++, Qt/QML, Opus, Android, iOS, TCP/UDP, Flask, Socket.IO
+| Direction | What interests me |
+| :--- | :--- |
+| **Agents that can finish the job** | Tool use, durable execution, bounded autonomy, and human approval at consequential steps. |
+| **Context as an engineering discipline** | Retrieval, useful memory, and deliberate context selection that keep a system grounded in the task. |
+| **Interoperable AI** | [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) for connecting tools and data; [A2A](https://a2a-protocol.org/latest/) for communication between agents. |
+| **Quality you can measure** | Task-level evaluations, execution traces, and explicit budgets for latency, cost, and failure. |
+| **Voice, local inference, and hybrid systems** | Putting intelligence where privacy, responsiveness, and operating cost make sense. |
 
-Highlights:
-- Real-time audio engine with jitter buffer and packet-loss handling
-- Published on Google Play and App Store
-- Supporting relay infrastructure and real-time monitoring dashboard
+<details>
+<summary><strong>Reading behind the radar</strong></summary>
 
----
+- [Effective context engineering for AI agents — Anthropic](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [Demystifying evals for AI agents — Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
+- [Model Context Protocol — official documentation](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [Agent2Agent — official documentation](https://a2a-protocol.org/latest/)
 
-## Open-source projects
+</details>
 
-### DoHSpeedTest
-Client-side DNS-over-HTTPS benchmark tool.
+## Built in the open
 
-**Stack:** JavaScript, Chart.js, Tailwind CSS  
-⭐ 390+ stars
+| Project | The problem it tackles |
+| :--- | :--- |
+| **[DoHSpeedTest](https://github.com/BrainicHQ/DoHSpeedTest)** | Benchmark DNS-over-HTTPS resolvers directly in the browser. |
+| **[Tado° Assistant](https://github.com/BrainicHQ/tado-assistant)** | Automate thermostat behavior with a self-hosted smart-home tool. |
+| **APRS-Web** | Bring live amateur-radio position reporting to a real-time PWA. |
+| **SvxLink VAD work** | Apply Silero voice activity detection to reduce unwanted radio-network activations. |
 
----
+## The stack behind the work
 
-### Tado° Assistant
-Smart home automation for Tado° thermostats.
+**Core:** TypeScript · Python · C++ · Next.js · React · PostgreSQL · Docker · Linux  
+**AI & audio:** OpenAI-compatible APIs · Whisper · Groq · Silero VAD · Opus  
+**Systems:** background jobs · WebSockets · TCP/UDP · multi-tenancy · RBAC · CI/CD
 
-**Stack:** Bash, Docker, Tado API  
-⭐ 70+ stars
+<details>
+<summary><strong>The wider toolbox</strong></summary>
 
----
+| Area | Tools I've worked with |
+| :--- | :--- |
+| Frontend | Angular, Tailwind CSS |
+| Backend | Node.js, Express, Flask, Laravel, OpenResty |
+| Data | Redis, MongoDB, Neo4j, SQLite, Prisma |
+| Mobile | Qt/QML, Flutter, SwiftUI, Kotlin, Capacitor/Cordova |
+| Infrastructure | Docker Compose, Cloudflare, Caddy, Nginx, AWS, systemd |
+| Communication | Socket.IO, VoIP, audio pipelines |
 
-### APRS-Web
-Real-time APRS position reporting PWA.
+</details>
 
-**Stack:** Node.js, Socket.IO, Leaflet, Docker, APRS-IS TCP
+## How I lead and build
 
----
-
-### svxlink VAD Fork
-Integrated Silero VAD into SvxLink reflector to reduce kerchunking in amateur radio networks.
-
-**Stack:** C++, Silero VAD, SvxLink
-
----
-
-## Tech I use regularly
-
-**Frontend:** Next.js, React, Angular, Tailwind CSS  
-**Backend:** Node.js, Express, Python, Flask, Laravel, OpenResty  
-**Databases:** PostgreSQL, Redis, MongoDB, Neo4j, SQLite  
-**AI / LLM:** OpenAI-compatible APIs, Whisper, Groq, prompt engineering, guardrails, HITL workflows  
-**Mobile:** Qt/QML, Flutter, SwiftUI, Kotlin, Capacitor/Cordova  
-**Infrastructure:** Docker, Docker Compose, Cloudflare, Caddy, Nginx, AWS, Linux, CI/CD, systemd  
-**Real-time:** WebSockets, Socket.IO, TCP/UDP, VoIP, audio pipelines  
+- **Start with the constraint.** Understand the user, the economics, and the failure modes before choosing the architecture.
+- **Make AI accountable.** Define success, inspect the output, and keep people in control of consequential decisions.
+- **Own the whole system.** Data boundaries, retries, observability, and deployment are part of the product.
+- **Keep the code understandable.** Clear interfaces, readable implementations, and small changes help teams move with confidence.
+- **Stay close to the work.** Lead the team, review the architecture, and keep building.
 
 ---
 
-## How I work
+### Let's build something useful.
 
-I like building systems that are simple enough to maintain and strong enough to survive production.
+Interested in AI products, SaaS architecture, real-time systems, or an open-source collaboration? **[Let's connect on LinkedIn](https://www.linkedin.com/in/silviustroe)** or explore **[Brainic](https://github.com/BrainicHQ)**.
 
-My default approach:
-- Start with product constraints, not technology hype
-- Design the architecture around real usage patterns
-- Ship iteratively
-- Keep deployments boring and observable
-- Use AI where it creates leverage, not where it adds noise
-- Prefer readable code, clear ownership, and pragmatic engineering decisions
-
----
-
-## Background
-
-I'm the founder of **Brainic**, a product development studio based in Brașov, Romania. Over the years, I've worked across SaaS, mobile, infrastructure, real-time communication, AI workflows, automation, and open-source tools.
-
-I have led teams, reviewed architectures, coordinated product delivery, and still enjoy writing the code myself.
-
----
-
-## Connect
-
-- Website: [silviustroe.com](https://silviustroe.com)
-- GitHub: [@s1lviu](https://github.com/s1lviu)
-- Brainic: [@BrainicHQ](https://github.com/BrainicHQ)
-- LinkedIn: [Silviu Stroe](https://www.linkedin.com/in/silviustroe)
-- X: [@SilviuStroe](https://x.com/SilviuStroe)
-
----
-
-> Building useful software, real systems, and tools that make technology feel less fragile.
+<sub>Built with curiosity. Shipped with care.</sub>
